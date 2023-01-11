@@ -1,7 +1,7 @@
 version: '3.7'
 services:
-  msql:
-    image: mysql:8.0
+  mysqldb:
+    image: mysql:8.0.18
     restart: always
     ports:
       - '3306:3306'
@@ -12,3 +12,6 @@ services:
       - MYSQL_DATABASE=app
       - MYSQL_USER=app
       - MYSQL_PASSWORD=pass
+
+
+
